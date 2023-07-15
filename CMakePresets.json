@@ -17,17 +17,17 @@
         {
             "name": "android",
             "hidden": true,
-            "toolchainFile": "/opt/android-ndk/build/cmake/android.toolchain.cmake",
+            "toolchainFile": "/Users/vinhthieu/Library/Android/sdk/ndk/20.1.5948944/build/cmake/android.toolchain.cmake",
             "cacheVariables": {
                 "ANDROID_ABI": "armeabi-v7a",
                 "ANDROID_PLATFORM": "23",
-                "ANDROID_SDK": "/opt/android-sdk",
+                "ANDROID_SDK": "/Users/vinhthieu/Library/Android/sdk",
                 "ANDROID_BUILD_ABI_armeabi-v7a": "ON"
             },
             "environment": {
-                "JAVA_HOME": "/usr/lib/jvm/java-1.8.0-openjdk-amd64",
-                "ANDROID_SDK_ROOT": "/opt/android-sdk",
-                "ANDROID_NDK_ROOT": "/opt/android-ndk"
+                "JAVA_HOME": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home",
+                "ANDROID_SDK_ROOT": "/Users/vinhthieu/Library/Android/sdk",
+                "ANDROID_NDK_ROOT": "/Users/vinhthieu/Library/Android/sdk/ndk/20.1.5948944"
             },
             "binaryDir": "${sourceDir}/build_android"
         },
@@ -35,7 +35,7 @@
             "name": "Qt-desktop",
             "hidden": true,
             "cacheVariables": {
-                "CMAKE_PREFIX_PATH": "/usr/local/Qt/gcc_64"
+                "CMAKE_PREFIX_PATH": "/Users/vinhthieu/Qt/5.15.2/clang_64"
             },
             "binaryDir": "${sourceDir}/build"
         },
@@ -43,7 +43,7 @@
             "name": "Qt-android",
             "hidden": true,
             "cacheVariables": {
-                "CMAKE_PREFIX_PATH": "/usr/local/Qt/android",
+                "CMAKE_PREFIX_PATH": "/Users/vinhthieu/Qt/5.15.2/android",
                 "CMAKE_FIND_ROOT_PATH_MODE_PACKAGE": "BOTH"
             }
         },
